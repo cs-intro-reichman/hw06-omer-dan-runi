@@ -13,14 +13,9 @@ import java.awt.Color;
 public class Editor3 {
 
 	public static void main (String[] args) {
-		String source = "cake.ppm";
-		String target = "ironman.ppm";
-		int n = 50;
-
-
-		// String source = args[0];
-		// String target = args[1];
-		// int n = Integer.parseInt(args[2]);
+		String source = args[0];
+		String target = args[1];
+		int n = Integer.parseInt(args[2]);
 		Color[][] sourceImage = Runigram.read(source);
 		Color[][] targetImage = Runigram.read(target);
 		Runigram.setCanvas(sourceImage);
