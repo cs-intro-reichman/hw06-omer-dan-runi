@@ -190,8 +190,8 @@ public class Runigram {
 			{
 				sourceRow = (int) (row * (imageHeight / (double) height));
                 sourceCol = (int) (col* (imageWidth/ (double) width));
-                sourceRow = Math.min(sourceRow, imageHeight - 1);
-                sourceCol = Math.min(sourceCol, imageWidth - 1);
+                sourceRow = Math.min(sourceRow, imageWidth - 1);
+                sourceCol = Math.min(sourceCol, imageHeight - 1);
 
 				scaledImage[row][col] = image[sourceRow][sourceCol];
 			}
