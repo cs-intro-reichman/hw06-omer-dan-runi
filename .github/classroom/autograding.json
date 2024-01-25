@@ -37,7 +37,7 @@
         "input": "",
         "output": "(150,91,1) (153,91,4) \n150\n200\n",
         "comparison": "included",
-        "timeout": 1000,
+        "timeout": 10,
         "points": 15
       },
       {
