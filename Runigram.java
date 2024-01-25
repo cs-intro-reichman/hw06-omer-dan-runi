@@ -182,21 +182,21 @@ public class Runigram {
 	 */
 	public static Color[][] scaled(Color[][] image, int width, int height)
 	{
-		Color[][] scaledImage = new Color[height][width];//new color 2D array
+		Color[][] scaledImage = new Color[height][width];
 		int imageHeight = image.length;
 		int imageWidth = image[0].length;
-		int sourceHeight = 0;
-		int sourceWidth = 0;
+		int indexHeight = 0;
+		int indexWidth = 0;
 
 		for (int row = 0; row < height; row++)
 		{
 			for (int col = 0; col < width; col++)
 			{
-				sourceHeight = (int)(row * (imageHeight / (double)height));
-				sourceWidth = (int)(col * (imageWidth / (double)width));
-				sourceHeight = Math.min(sourceHeight, imageHeight - 1);
-				sourceWidth = Math.min(sourceWidth, imageWidth - 1);
-				scaledImage[row][col] = image[sourceHeight][sourceWidth];
+				indexHeight = (int) (row * (imageHeight / (double) height));
+				indexWidth = (int) (col * (imageWidth / (double) width));
+				indexHeight = Math.min(indexHeight, imageHeight - 1);
+				indexWidth = Math.min(indexWidth, imageWidth - 1);
+				scaledImage[row][col] = image[indexHeight][indexWidth];
 			}
 		}
 
